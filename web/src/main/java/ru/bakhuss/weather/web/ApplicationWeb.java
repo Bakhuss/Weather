@@ -2,16 +2,15 @@ package ru.bakhuss.weather.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import ru.bakhuss.weather.core.service.WeatherService;
-import ru.bakhuss.weather.core.service.impl.WorldWeatherOnlineServiceImpl;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-@SpringBootApplication
-public class ApplicationWeb {
+@SpringBootApplication(scanBasePackages = "ru.bakhuss.weather.*")
+public class ApplicationWeb extends SpringBootServletInitializer {
 
-    @Bean
-    public WeatherService weatherService() {
-        return new WorldWeatherOnlineServiceImpl();
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(ApplicationWeb.class);
     }
 
     public static void main(String[] args) {
