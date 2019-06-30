@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>weather-web</artifactId>
     <packaging>war</packaging>
-    <name>Weather Web</name>
+    <name>${name} Web</name>
 
     <dependencies>
         <dependency>

@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>weather-desktop</artifactId>
     <packaging>jar</packaging>
-    <name>Weather Desktop</name>
+    <name>${name} Desktop</name>
 
     <dependencies>
         <dependency>
