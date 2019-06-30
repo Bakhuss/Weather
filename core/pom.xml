@@ -9,6 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>weather-core</artifactId>
-    <name>Weather Core</name>
     <packaging>jar</packaging>
+    <name>Weather Core</name>
 </project>

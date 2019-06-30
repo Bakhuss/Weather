@@ -7,7 +7,7 @@
 <body>
 <div align="center">
     <h1>Weather</h1>
-    <p>From <a href="${service}">worldweatheronline</a></p>
+    <p>From <a href="${service}">${service}</a></p>
     <h3>Time UTC: ${time}</h3>
     <table style="line-height: 30px;">
         <tr>
