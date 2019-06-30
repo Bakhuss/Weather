@@ -22,6 +22,7 @@ public class WeatherControllerImpl implements WeatherController {
 
     @Value("${wwo.key}")
     private String key;
+
     @Value("#{'${cities}'.split(';')}")
     private List<String> cities;
 
